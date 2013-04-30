@@ -3,7 +3,7 @@
   "repo": "component/struct",
   "description": "C struct style buffer views",
   "version": "0.0.1",
-  "keywords": [],
+  "keywords": ["struct", "binary", "buffer"],
   "dependencies": {},
   "development": {},
   "license": "MIT",
