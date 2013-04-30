@@ -1,0 +1,16 @@
+{
+  "name": "struct",
+  "repo": "component/struct",
+  "description": "C struct style buffer views",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "read.js",
+    "write.js"
+  ]
+}
