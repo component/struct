@@ -33,9 +33,10 @@
   });
 
   var off = 0;
-  off = tobi.write(buf, off);
-  off = loki.write(buf, off);
-  off = jane.write(buf, off);
+  var pets = [tobi, loki, jane];
+  for (var i = 0; i < pets.length; i++) {
+    off = pets[i].write(buf, off);
+  }
 
   // read
 

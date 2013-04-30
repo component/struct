@@ -42,9 +42,10 @@ var jane = new Pet({
 });
 
 var off = 0;
-off = tobi.write(buf, off);
-off = loki.write(buf, off);
-off = jane.write(buf, off);
+var pets = [tobi, loki, jane];
+for (var i = 0; i < pets.length; i++) {
+  off = pets[i].write(buf, off);
+}
 
 // read
 
@@ -55,10 +56,6 @@ while (n--) {
   off = pet.read(buf, off);
   console.log('%s (%s) is %s years old', pet.name, pet.id, pet.age);
 }
-
-// => Tobi (1) is 2 years old
-// => Loki (2) is 2 years old
-// => Jane (3) is 6 years old
 ```
 
 ## API
